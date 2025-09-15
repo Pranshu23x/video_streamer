@@ -7,16 +7,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
+            background-image: url('Photo1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             font-family: 'Poppins', sans-serif;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+            color: #fff;
         }
 
         h1 {
@@ -24,42 +36,9 @@
             font-size: 1.5rem;
         }
 
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: -140px; /* Crop more from the bottom */
-            left: 0;
-            width: 100%;
-            height: 10000px;
-            border: none;
-        }
-
-        .stay-tuned {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 2rem;
-            font-weight: 700;
-            color: #f0c040;
-            text-shadow: 0 0 10px rgba(240,192,64,0.7);
-            pointer-events: none;
-            font-family: 'Poppins', sans-serif;
-        }
-
         footer {
             font-size: 0.9rem;
             color: #ccc;
-            margin-top: 20px;
         }
 
         .message {
@@ -83,9 +62,6 @@
             h1 {
                 font-size: 1.2rem;
             }
-            .stay-tuned {
-                font-size: 1.5rem;
-            }
             .message {
                 font-size: 0.9rem;
             }
@@ -100,17 +76,15 @@
 </head>
 <body>
     
-    <h1>Thank me later, xx</h1>
+    <div class="card">
+        <h1>Will go live for Asia Cup final <br>🇮🇳 vs ?</h1>
 
- 
-        <div class="stay-tuned">Stay Tuned ✨</div>
+        <footer>
+            <div class="message">If you guys want to play anything (free/paid) <br> DM XD</div>
+            <p class="signature">~Pranshu ✨</p>
+            <div class="license">MIT LICENSE © 2025. ALL RIGHTS RESERVED.</div>
+        </footer>
     </div>
-
-    <footer>
-        <div class="message">If you guys want to play anything (free/paid) <br> DM XD</div>
-        <p class="signature">~Pranshu ✨</p>
-        <div class="license">MIT LICENSE © 2025. ALL RIGHTS RESERVED.</div>
-    </footer>
 
 </body>
 </html>
