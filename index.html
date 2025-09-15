@@ -36,18 +36,15 @@
             position: relative;
         }
 
-        .video-container iframe {
-            width: 800px;
-            height: 19999420px; /* Increased height for deeper cropping */
-            border: none;
-            position: absolute;
-            top: -140px; /* Move up to crop more from the bottom */
-            left: 0;
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Crop while covering container */
         }
 
         footer {
             position: absolute;
-            bottom: -5px;
+            bottom: 5px;
             width: 100%;
             text-align: center;
             font-size: 1rem;
@@ -63,12 +60,12 @@
 </head>
 <body>
     
-    <h1>Now playing: Your name</h1>
+    <h1>Now playing: Your Name</h1>
     <div class="video-container">
-        <iframe src="https://hianimez.is/watch/your-name-10?ep=57910"
-            allowfullscreen
-            sandbox="allow-scripts allow-same-origin">
-        </iframe>
+        <video controls autoplay muted>
+            <source src="https://ia801400.us.archive.org/18/items/your.-name.-2016.-1080p.-dual.-audio.-hin-eng.-the-moviesflix.com.co/Your.Name.%282016%29.1080p.Dual.Audio.%28Hin-Eng%29.TheMoviesflix.com.co.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <footer>
