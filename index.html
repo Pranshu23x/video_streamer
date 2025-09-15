@@ -6,59 +6,75 @@
     <title>Nothing really</title>
     <link rel="stylesheet" href="index.css">
     <style>
-   body {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-}
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Disable scrolling */
+            background-color: #000;
+        }
 
-h1 {
-    margin-bottom: 20px;
-}
+        body {
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
 
-.video-container {
-    position: relative;
-    width: 800px;
-    height: 450px;
-    margin: 0 auto;
-    overflow: hidden; /* Crop the overflow part */
-}
+        h1 {
+            margin-bottom: 20px;
+        }
 
-.video-container iframe {
-    width: 800px;
-    height: 470px; /* Slightly larger to cover the bottom */
-    margin-bottom: -494px; /* Move the iframe up to hide the button */
-    border: none;
-}
+        .video-container {
+            width: 800px;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .video-container iframe {
+            width: 800px;
+            height: 19999420px; /* Increased height for deeper cropping */
+            border: none;
+            position: absolute;
+            top: -140px; /* Move up to crop more from the bottom */
+            left: 0;
+        }
+
         footer {
-            margin-top: 30px;
-            font-size: 1.1rem;
-            font-style: italic;
-            color: #888;
+            position: absolute;
+            bottom: -5px;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: #ccc;
+            font-family: 'Brush Script MT', cursive;
         }
 
         .signature {
-            font-family: 'Brush Script MT', cursive;
-            font-size: 1.4rem;
             color: #f0c040;
+            font-size: 1.4rem;
         }
     </style>
 </head>
 <body>
     
-    <h1>Thank me later, xx</h1>
+    <h1>Now playing: Your name</h1>
     <div class="video-container">
-        <iframe src="https://insiderlive1.netlify.app/hindi/"
+        <iframe src="https://hianimez.is/watch/your-name-10?ep=57910"
             allowfullscreen
-            sandbox="allow-scripts allow-same-origin">f
+            sandbox="allow-scripts allow-same-origin">
         </iframe>
     </div>
 
     <footer>
-        <p>Made with love ❤️ </p>
+        <p>Made with love ❤️</p>
         <p class="signature">~Pranshu ✨</p>
     </footer>
     
 </body>
 </html>
-
